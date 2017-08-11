@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>post</title>
+</head>
+<style>
+body
+{
+ text-align: left;
+ background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQddggEcoeqfED2sJddTlKkBzjCn1jZoKwIaXtEOjhlLra6nMAzZQ");
+ background-size:cover;
+ background-position: up;
+ color: black;
+ font-family: arial;
+ font-size:20px;
+ }
+</style>
+<body>
+
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+       <h1>Posting an image</h1>
+      {{ form }}
+        <input type="submit" class="btn btn-default" value="Add a picture">
+
+    </form>
+</body>
+</html>
